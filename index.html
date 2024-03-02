@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-white">
+    <header class="bg-blue-400 flex justify-around items-center py-4">
+      <nav id="catagory-container" class="flex gap-4 scale-90"></nav>
+
+      <div class="flex w-[30%]">
+        <input
+          id="searched-data"
+          type="text"
+          placeholder="Search content"
+          class="py-3 px-3 w-[100%] rounded-md outline-none"
+        />
+        <button
+          onclick="handleSearch()"
+          class="bg-orange-300 rounded-md px-3 text-black font-semibold -ml-5"
+        >
+          Search
+        </button>
+      </div>
+    </header>
+
+    <main id="news-container" class="p-6">
+
+      <div id="loader" class="flex items-center justify-center ">
+        <span class="loading loading-spinner loading-lg"></span>
+      </div>
+
+      <div></div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
