@@ -29,7 +29,7 @@ const loadNews = async(id) => {
     container.innerHTML = '';
     news.forEach((newsData) => {
 
-        const div = document.createElement('div');
+        const div = document.createElement('div'); 
         div.innerHTML = `
         <div class="card card-side bg-gray-700 shadow-xl w-[80%] mx-auto p-4 mb-5">
         <figure class="w-[50%]">
